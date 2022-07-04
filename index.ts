@@ -8,7 +8,7 @@ const PORT = 8080;
 const server = express();
 
 // configuracoes da aplicacao
-server.use(express.json()) // permitir que leia json
+server.use(express.json()); // permitir que leia json
 
 server.use(routes); // configuracao de rotas
 
