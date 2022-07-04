@@ -1,12 +1,18 @@
 import express from "express";
+import routes  from "./routes/book-routes";
 
 // variaveis de configuracao
-var PORT = 8080;
+const PORT = 8080;
 
 // iniciando o express
-var server = express();
+const server = express();
 
+// configuracoes da aplicacao
+server.use(express.json()) // permitir que leia json
 
+server.use(routes); // configuracao de rotas
+
+/* inicializacao do servidor */
 server.listen(`${PORT}`, () =>{
-    console.log("Server rodando em " + PORT + ".")
+    console.log(`Server rodando em ${PORT}.`);
 });
