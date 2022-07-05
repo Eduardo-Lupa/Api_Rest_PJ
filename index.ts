@@ -1,16 +1,17 @@
 import express from "express";
-import routes  from "./routes/book-routes";
+import userRoutes  from "./src/routes/book-routes";
 
-// variaveis de configuracao
+/* variaveis de configuracao */
 const PORT = 8080;
 
-// iniciando o express
+/* iniciando o express */
 const server = express();
 
-// configuracoes da aplicacao
+/* configuracoes da aplicacao */
 server.use(express.json()); // permitir que leia json
 
-server.use(routes); // configuracao de rotas
+/* configuracao de rotas */
+server.use(userRoutes);
 
 /* inicializacao do servidor */
 server.listen(`${PORT}`, () =>{
