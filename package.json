@@ -2,7 +2,7 @@
   "name": "apirest",
   "version": "1.0.0",
   "description": "Criação de uma ApiRest de uma biblioteca com banco de dados para o processo seletivo da Poli Júnior Engenharia.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "start": "node dist/index.js",
     "build": "tsc -p .",
