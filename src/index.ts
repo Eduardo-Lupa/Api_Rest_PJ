@@ -1,5 +1,5 @@
 import express from "express";
-import userRoutes  from "./src/routes/book-routes";
+import userRoutes  from "./routes/book-routes";
 
 /* variaveis de configuracao */
 const PORT = 8080;

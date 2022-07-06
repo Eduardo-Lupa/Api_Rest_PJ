@@ -1,6 +1,5 @@
 import { Request, Router, Response, NextFunction } from "express";
 import dbController from "../controller/db-controller";
-import db from "../database/postgres";
 
 const userRoutes = Router();
 

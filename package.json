@@ -4,9 +4,9 @@
   "description": "Criação de uma ApiRest de uma biblioteca com banco de dados para o processo seletivo da Poli Júnior Engenharia.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node dist/index.js",
     "build": "tsc -p .",
-    "dev": "ts-node-dev index.ts",
+    "dev": "ts-node-dev src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
