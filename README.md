@@ -8,11 +8,12 @@ A Biblioteca Poli Júnior consiste numa API REST na qual seja possível Criar, L
 - O Banco de dados utilizado será da escolha do treinee, podendo ser relacional ou não relacional.
 
 ## Base de metodos criada pelo treinee 
-- get   /books    => para mostrar todos os livros
-- post  /books    => para adicionar livros
-- put /books/:uuid => para alterar livro procurado pelo seu id
-- delete /books/:uuid => para deleter livros por id
+- GET   /books        => para mostrar todos os livros
+- GET   /books/:uuid  => para mostrar o livro com id específico 
+- POST  /books        => para adicionar livros
+- PUT /books/:uuid    => para alterar livro procurado pelo seu id
+- DELETE /books/:uuid => para deleter livros por id
 
 Linguagem: JavaScript em server-side(node.js) com TypeScript <br />
-Banco de dados: a decidir <br />
+Banco de dados: PostgreSQL <br />
 Framework: Express <br />
